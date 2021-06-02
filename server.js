@@ -28,9 +28,11 @@ app.get('/users/:id', (req, res) => {
 
 // [ /login end point]
 app.post('/login', (req, res) => {
+    // we will give data 
     const username = req.body.username;
     const password = req.body.passsword;
 
+    // data will come from database
     const mockUserName = "Diptamoy";
     const mockPassword = "secret";
 
