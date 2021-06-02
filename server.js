@@ -8,6 +8,14 @@ const mockUserData=[
     {name:'Mark'},
     {name:'Jill'}
 ]
+
+app.get('/', (req, res) =>{
+    res.json({
+        success: true,
+        message: "welcome! use this endpoint  -> '/user', '/user:id', '/login' "
+    })
+})
+
 // [ /users end point ]
 app.get('/users', function(req, res) {
     res.json({
